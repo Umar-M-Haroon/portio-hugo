@@ -23,7 +23,7 @@
 			{{ range first 3 (where $.Site.RegularPages "Type" "!=" "portfolio") }}
 			<div class="col-lg-4">
 				<div class="blog-preview__item">
-					{{ if Params.featureImage }}
+					{{ if .Params.featureImage }}
 					<div class="blog-preview__item-thumb">
 						<img src="{{ .Params.featureImage | absURL }}" alt="post-image">
 					</div>
